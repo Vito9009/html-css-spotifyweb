@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     font-size: 15px;
+    overflow:hidden;
 }
 
 /* MAIN */
@@ -20,6 +21,7 @@ main{
 .menu{
     float: left;
     height: calc(100vh - 100px);
+    width: 50px;
 }
 
 .side-menu{
@@ -125,11 +127,14 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .container-footer{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-left{
@@ -148,4 +153,11 @@ footer{
 .info-song{
     display: flex;
     flex-direction: column;
+}
+
+.bar{
+    height: 2px;
+    width: 50px;
+    background-color: white;
+    border-radius: 2px;
 }
