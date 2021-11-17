@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main{
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: red;
+}
+
+.side-menu{
+    height: 100%;
+    width: 40px;
+    background-color: chartreuse;
+}
+
+.upgrade-button-top{
+    height: 50px;
+    width: calc(100% - 40px);
+    background-color: coral;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer{
+    width: 100vw;
+    height: 50px;
+    background-color: blue;
+}
