@@ -3,15 +3,23 @@
     padding: 0;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 15px;
 }
 
 /* MAIN */
 main{
-    width: 100vw;
+    width: calc(100vw - 50px);
     height: calc(100vh - 100px);
     background-color: rgb(20, 25, 34);
     position: relative;
+    float: right;
+    overflow: auto;
+}
+
+/* MENU LATERALE */
+.menu{
+    float: left;
+    height: calc(100vh - 100px);
 }
 
 .side-menu{
@@ -54,9 +62,11 @@ main{
     height: 20px;
 }
 
+/* BOTTONE IN ALTO A DESTRA */
+
 .main-section-top{
     height: 100px;
-    width: calc(100% - 50px);
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
@@ -72,10 +82,36 @@ main{
     text-transform: uppercase;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50px;
-    padding: 15px;
+    padding: 15px 30px;
     font-weight: bold;
 }
 
+/* BARRA DI NAVIGAZIONE MAIN */
+
+.nav-bar{
+    margin-top: 120px;
+}
+
+.central-container nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    row-gap: 30px;
+}
+
+.central-container nav ul li{
+    list-style: none;
+    font-weight: bold;
+}
+
+.central-container nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(124, 126, 131);
+}
 
 /* FOOTER */
 
@@ -84,4 +120,6 @@ footer{
     width: 100vw;
     background-color: rgb(40, 40, 40);
     position: fixed;
+    bottom: 0;
+    left: 0;
 }
