@@ -9,6 +9,7 @@ body{
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 li{
@@ -145,6 +146,7 @@ main{
 
 .central-container nav ul li{
     font-weight: bold;
+    position: relative;
 }
 
 .central-container nav ul li a{
@@ -156,8 +158,11 @@ main{
 .nav-bar nav ul li hr{
     width: 33%;
     height: 3px;
-    margin: 0 auto;
     background-color: rgb(173, 255, 47);
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* MUSICA RIPRODOTTA */
@@ -194,7 +199,7 @@ main{
 }
 
 .music{
-    width: 200px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,7 +209,7 @@ main{
 }
 
 .music img{
-    height: 200px;
+    height: 180px;
 }
 
 .circle-image{
@@ -212,8 +217,8 @@ main{
 }
 
 .disc-cover{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     position: relative;
 }
 
