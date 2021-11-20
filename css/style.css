@@ -74,11 +74,11 @@ main{
     cursor: pointer;
 }
 
-.nav-bar ul li, .side-menu .top-menu ul li img, .side-menu .bottom-menu .install-app, .footer-left .fav-song .icon-fav-song{
+.nav-bar ul li a, .side-menu .top-menu ul li img, .side-menu .bottom-menu .install-app, .footer-left .fav-song .icon-fav-song{
     opacity: 0.5;
 }
 
-.nav-bar ul li:hover, .side-menu .top-menu img:hover, .side-menu .bottom-menu .install-app:hover, .footer-left .fav-song .icon-fav-song:hover{
+.nav-bar ul li a:hover, .side-menu .top-menu img:hover, .side-menu .bottom-menu .install-app:hover, .footer-left .fav-song .icon-fav-song:hover{
     opacity: 1;
 }
 
@@ -147,6 +147,7 @@ main{
 .central-container nav ul li{
     font-weight: bold;
     position: relative;
+    padding-bottom: 5px;
 }
 
 .central-container nav ul li a{
@@ -157,14 +158,14 @@ main{
 
 .nav-bar nav ul li hr{
     width: 33%;
-    height: 3px;
+    height: 2px;
     background-color: rgb(173, 255, 47);
     position: absolute;
-    bottom: -3px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    border: rgb(173, 255, 47);
 }
-
 /* MUSICA RIPRODOTTA */
 
 .row-1{
