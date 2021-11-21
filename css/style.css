@@ -16,6 +16,11 @@ li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 /* MAIN */
 main{
     width: calc(100vw - 50px);
@@ -53,6 +58,14 @@ main{
 
 .side-menu img{
     height: 25px;
+}
+
+.side-menu .top-menu .text-logo{
+    display: none;
+}
+
+.side-menu .top-menu .playlist-section, .text-sidebar{
+    display: none;
 }
 
 .side-menu .top-menu, .side-menu .bottom-menu{
@@ -388,4 +401,159 @@ footer .fas, footer .far{
 
 .general-bar:hover .circle-bar{
     display: block;
+}
+
+/* MEDIA QUERY S (MIN-WIDTH 576PX) */
+
+@media screen and (min-width: 576px) {
+    /* MAIN */
+main{
+    width: calc(100vw - 200px);
+    height: calc(100vh - 100px);
+    background-color: rgb(20, 25, 34);
+    position: relative;
+    float: right;
+    overflow: auto;
+}
+
+/* MENU LATERALE */
+.menu{
+    float: left;
+    height: calc(100vh - 100px);
+    width: 200px;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+.side-menu{
+    width: 200px;
+    align-items: flex-start;
+}
+
+.side-menu img{
+    height: 25px;
+}
+
+.side-menu .top-menu .logo{
+    display: none;
+}
+
+.side-menu .top-menu .text-logo{
+    display: inline-block;
+    height: 35px;
+    padding-left: 15px;
+}
+
+.side-menu .top-menu .icon-top-section ul li{
+    padding-left: 15px;
+}
+
+.side-menu .top-menu .playlist-section, .text-sidebar{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.side-menu .top-menu .icon-top-section li a, .side-menu .top-menu .playlist-section li a, .side-menu .bottom-menu li .mini-icon-bottom-menu{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 5px;
+}
+
+.side-menu .top-menu .playlist-section li a{
+    padding-left: 12px;
+}
+
+.side-menu .top-menu .playlist-section h4{
+    font-size: 15px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.side-menu .top-menu .fa-plus-square{
+    font-size: 35px;
+}
+
+.side-menu .top-menu, .side-menu .bottom-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.side-menu .top-menu{
+    height: 500px;
+    width: 100%;
+}
+
+.side-menu .bottom-menu{
+    height: 100px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.nav-bar ul li a, .side-menu .top-menu ul li img, .side-menu .bottom-menu .install-app, .footer-left .fav-song .icon-fav-song, .text-sidebar, .text-playlist{
+    opacity: 0.5;
+}
+
+.nav-bar ul li a:hover, .side-menu .top-menu img:hover, .side-menu .bottom-menu .install-app:hover, .footer-left .fav-song .icon-fav-song:hover, .text-sidebar:hover, .text-playlist:hover{
+    opacity: 1;
+}
+
+.side-menu .top-menu ul li img.home-icon, .side-menu .top-menu ul li span.home-icon, .side-menu .bottom-menu .username{
+    opacity: 1;
+}
+
+.side-menu .top-menu ul li.home-icon{
+    position: relative;
+}
+
+
+.side-menu .top-menu ul li.home-icon .left-line{
+    border-left: 3px solid rgb(173, 255, 47);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.bottom-menu .install-app{
+    height: 20px;
+}
+
+.bottom-menu hr{
+    width: 90%;
+}
+
+.bottom-menu .username{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* BOTTONE IN ALTO A DESTRA */
+
+.main-section-top{
+    width: calc(100% - 200px);
+}
+
+/* MUSICA RIPRODOTTA */
+.music{
+    width: 150px;
+}
+
+.music img{
+    height: 150px;
+}
+
+.disc-cover{
+    width: 150px;
+    height: 150px;
+}
 }
