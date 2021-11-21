@@ -308,6 +308,15 @@ footer{
     width: 35px;
 }
 
+.info-disc-footer{
+    opacity: 0.5;
+}
+.info-disc-footer:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
 .fav-song{
     margin-left: 10px;
 }
@@ -563,6 +572,9 @@ main{
 }
 }
 
+/* MEDIA QUERY M (MIN-WIDTH 768PX) */
+
+
 @media (min-width: 768px){
 
     .row{
@@ -600,6 +612,7 @@ main{
 
 }
 
+/* MEDIA QUERY L (MIN-WIDTH 992PX) */
 
 @media (min-width: 992px){
 
@@ -612,4 +625,8 @@ main{
     }
 }
 
-/*mettere un po' di ordine nel codice*/
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++mettere un po' di ordine nel codice e raggruppare gli hover+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
