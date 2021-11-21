@@ -439,6 +439,11 @@ main{
     height: 25px;
 }
 
+.side-menu .top-menu{
+    min-height: 520px;
+}
+
+
 .side-menu .top-menu .logo{
     display: none;
 }
@@ -557,3 +562,5 @@ main{
     height: 150px;
 }
 }
+
+/*realizzare media query large e mettere un po' di ordine nel codice*/
