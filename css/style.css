@@ -563,4 +563,40 @@ main{
 }
 }
 
+@media (min-width: 992px){
+
+    .row-1{
+        margin: 0 auto;
+    }
+    .row-1 .recently-played{
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .row-1 .recently-played .music{
+        max-width: 20%;
+    }
+
+    .music img, .row-1 .recently-played .music .disc-cover{
+        width: 100%;
+        height: 100%;
+    }
+
+    .music h3{
+        font-size: 10px;
+    }
+
+    .music span{
+        font-size: 6px;
+    }
+
+    .playlist-title span{
+        font-size: 10px;
+    }
+
+
+}
+
 /*realizzare media query large e mettere un po' di ordine nel codice*/
